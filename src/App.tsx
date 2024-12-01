@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { Label } from "./components/Label";
 import DefaultTextField from "./components/DefaultTextField";
@@ -23,7 +21,7 @@ function App() {
         placeholder="이메일을 입력하세요"
         value=""
         errorMessage="이메일을 확인해주세요"
-        isError={false}
+        isError={isError}
         iconPath="https://kr.object.ncloudstorage.com/icons/ic-delete-dark.svg"
         iconAlt="delete-icon"
         onChange={() => {}}
@@ -37,12 +35,19 @@ function App() {
         placeholder="주소을 입력하세요"
         value=""
         errorMessage="주소을 확인해주세요"
-        isError={false}
+        isError={isError}
         iconPath="https://kr.object.ncloudstorage.com/icons/ic-delete-dark.svg"
         iconAlt="delete-icon"
         onChange={() => {}}
         onIconClick={() => {}}
       />
+      <button
+        onClick={() => {
+          setIsError(true);
+        }}
+      >
+        Toggle Error
+      </button>
     </>
   );
 }
