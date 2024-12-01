@@ -14,7 +14,7 @@ export default {
     borderRadius: {
       default: "5px",
       caption: "9px",
-      "tag-button": "16px",
+      "tag-button": "17.5px",
       "chat-text-field": "20px",
     },
     // Font
@@ -31,6 +31,7 @@ export default {
       mono300: "#d6d7e9",
       error: "#d01e1e",
       social: "#395997",
+      "dark-opacity": "rgba(255,255,255,0.1)",
     },
     fontSize: {
       xs: [
