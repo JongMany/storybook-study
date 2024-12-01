@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { Label } from "./components/Label";
 import DefaultTextField from "./components/DefaultTextField";
+import TagList from "./components/TagList";
 
 function App() {
   const [value, setValue] = useState("");
@@ -48,6 +49,9 @@ function App() {
       >
         Toggle Error
       </button>
+      <div className="bg-primary w-screen">
+        <TagList tagList={["Tag1", "Tag2", "Tag3"]} onTagClick={console.log} />
+      </div>
     </>
   );
 }
