@@ -5,3 +5,17 @@
 body {
   font-family: "Noto Sans KR";
 }
+
+/* CLS를 고려한 방법 */
+.cls-relative {
+  > p {
+    position: absolute;
+  }
+}
+
+/* Tailwind로 CLS를 적용 */
+@layer components {
+  .cls-relative > p {
+    @apply absolute;
+  }
+}

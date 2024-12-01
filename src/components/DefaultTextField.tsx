@@ -34,7 +34,7 @@ export default function DefaultTextField({
     : "border-primary";
 
   return (
-    <div>
+    <div className="relative cls-relative">
       <div
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
