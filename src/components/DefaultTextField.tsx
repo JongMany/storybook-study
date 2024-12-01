@@ -3,6 +3,7 @@ import ErrorMessage from "./ErrorMessage";
 import { useState } from "react";
 
 interface IDefaultTextFieldProps {
+  id: string;
   errorMessage: string;
   iconPath: string;
   iconAlt: string;
@@ -14,6 +15,7 @@ interface IDefaultTextFieldProps {
 }
 
 export default function DefaultTextField({
+  id,
   errorMessage,
   iconAlt,
   iconPath,
@@ -40,6 +42,7 @@ export default function DefaultTextField({
       >
         <input
           type="text"
+          id={id}
           value={value}
           onChange={onChange}
           placeholder={placeholder}

@@ -11,6 +11,11 @@ const meta = {
   },
   tags: ["autodocs"],
   argTypes: {
+    id: {
+      control: "text",
+      description: "텍스트 필드의 id",
+      defaultValue: "",
+    },
     iconAlt: {
       control: "text",
       description: "이미지의 alt 속성",
@@ -57,12 +62,8 @@ type Story = StoryObj<typeof meta>;
 // import deleteIcon from "../assets/ic-delete-dark.svg";
 export const Default: Story = {
   args: {
+    id: "",
     iconAlt: "icon",
-    // Public
-    // iconPath: "/icons/ic-delete-dark.svg",
-    // src/assets
-    // iconPath: deleteIcon,
-    // Cloud
     iconPath: "https://kr.object.ncloudstorage.com/icons/ic-delete-dark.svg",
     placeholder: "텍스트를 입력해주세요",
     value: "",
