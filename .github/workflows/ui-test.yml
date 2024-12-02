@@ -24,7 +24,7 @@ jobs:
             "npx wait-on tcp:127.0.0.1:6006 && yarn test-storybook"
 
   chromatic:
-    needs: test # depends on test
+    needs: accessibility-test # depends on test
     name: Run Chromatic
     runs-on: ubuntu-latest
     steps:
