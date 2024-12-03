@@ -46,6 +46,7 @@ export default function DefaultTextField({
           value={value}
           onChange={onChange}
           placeholder={placeholder}
+          data-testid={id}
         />
         {value.length > 0 && (
           <IconButton onClick={onIconClick} alt={iconAlt} iconPath={iconPath} />
