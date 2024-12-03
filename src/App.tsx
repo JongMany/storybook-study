@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { Label } from "./components/Label";
+import Label from "./components/Label";
 import DefaultTextField from "./components/DefaultTextField";
 import TagList from "./components/TagList";
 
@@ -20,12 +20,12 @@ function App() {
       <DefaultTextField
         id="email"
         placeholder="이메일을 입력하세요"
-        value=""
+        value={value}
         errorMessage="이메일을 확인해주세요"
         isError={isError}
         iconPath="https://kr.object.ncloudstorage.com/icons/ic-delete-dark.svg"
         iconAlt="delete-icon"
-        onChange={() => {}}
+        onChange={handleChange}
         onIconClick={() => {}}
       />
       <div className="mt-6" />
