@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import DefaultTextField from "./DefaultTextField";
-import { Label } from "./Label";
+import Label from "./Label";
 import PrimaryButton from "./PrimaryButton";
 
 export default function LoginForm() {
